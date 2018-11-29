@@ -1,0 +1,13 @@
+<div class="Dishes">
+  <div class="Dish" *ngFor="let burger of burgers">
+    <div
+      class="dishImg"
+      [ngStyle]="{ 'background-image': 'url(' + burger.src + ')' }"
+    ></div>
+    <div class="dishDesc">
+      <h4>{{ burger.name }}</h4>
+      <h5>${{ burger.price }}</h5>
+      <hr />
+    </div>
+  </div>
+</div>

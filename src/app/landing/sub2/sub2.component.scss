@@ -1,3 +1,5 @@
+$color: #e74c3c;
+
 .Sub2 {
   min-height: 100%;
   width: 80vw;
@@ -15,48 +17,19 @@
   h3 {
     width: 22%;
     margin: 0 1.5%;
-    border: 1px solid red;
+    border: 1px solid $color;
+    cursor: pointer;
+    padding: 1vh 0.5vw;
+
+    &:hover {
+      background: $color;
+      transition: 0.5s ease;
+      color: #fff;
+    }
   }
 }
 
-.Dishes {
-  display: flex;
-  flex-wrap: wrap;
-
-  .Dish {
-    width: 44%;
-    margin: 1vh 2.5%;
-    height: 20vh;
-    border: 0.5px solid #efefee;
-    display: flex;
-  }
-
-  .dishImg {
-    height: 100%;
-    width: 30%;
-    background: url(https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
-      no-repeat center center / cover;
-  }
-
-  .dishDesc {
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 5%;
-    h5 {
-      margin: 0;
-      font-weight: 400;
-      font-size: 1em;
-      padding-bottom: 1vh;
-    }
-
-    hr {
-      width: 20%;
-      margin: 0;
-      border: 0;
-      border-bottom: 3px solid red;
-    }
-  }
+.active {
+  background: $color;
+  color: #fff;
 }
