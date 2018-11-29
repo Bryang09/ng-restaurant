@@ -10,6 +10,10 @@ import { AboutComponent } from './about/about.component';
 import { CateringComponent } from './catering/catering.component';
 import { HeroComponent } from './landing/hero/hero.component';
 import { Sub1Component } from './landing/sub1/sub1.component';
+import { Section1Component } from './landing/sub1/section1/section1.component';
+import { Sub2Component } from './landing/sub2/sub2.component';
+import { Sub3Component } from './landing/sub3/sub3.component';
+import { DishesComponent } from './landing/sub2/dishes/dishes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { Sub1Component } from './landing/sub1/sub1.component';
     AboutComponent,
     CateringComponent,
     HeroComponent,
-    Sub1Component
+    Sub1Component,
+    Section1Component,
+    Sub2Component,
+    Sub3Component,
+    DishesComponent
   ],
   imports: [
     BrowserModule,
