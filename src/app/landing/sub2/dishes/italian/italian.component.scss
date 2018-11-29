@@ -1,0 +1,49 @@
+.Dishes {
+  display: flex;
+  flex-wrap: wrap;
+
+  .Dish {
+    width: 44%;
+    margin: 1vh 2.5%;
+    height: 20vh;
+    border: 0.5px solid #efefee;
+    display: flex;
+  }
+
+  .dishImg {
+    height: 100%;
+    width: 30%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .dishDesc {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 5%;
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+
+    h5 {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1em;
+      padding-bottom: 1vh;
+    }
+
+    hr {
+      width: 20%;
+      margin: 0;
+      border: 0;
+      border-bottom: 3px solid red;
+    }
+  }
+}

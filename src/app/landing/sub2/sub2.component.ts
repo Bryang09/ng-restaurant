@@ -27,4 +27,16 @@ export class Sub2Component implements OnInit {
     this.italian = false;
     this.sushi = false;
   };
+  onItalian = () => {
+    this.burgers = false;
+    this.pizza = false;
+    this.italian = true;
+    this.sushi = false;
+  };
+  onSushi = () => {
+    this.burgers = false;
+    this.pizza = false;
+    this.italian = false;
+    this.sushi = true;
+  };
 }

@@ -1,0 +1,44 @@
+$color: #e74c3c;
+
+.Catering {
+  height: 60vh;
+  background: url(https://images.pexels.com/photos/920570/pexels-photo-920570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    no-repeat center center / cover;
+  background-attachment: fixed;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-weight: 300;
+    font-size: 3em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.6);
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      outline: none;
+      background: rgba(0, 0, 0, 0);
+      border: 1px solid $color;
+      width: 40%;
+      padding: 1vh 0;
+      margin: 1vh 0;
+      padding-left: 2vw;
+      text-transform: uppercase;
+      // color: #fff;
+      color: $color;
+      // color: #ffc58e;
+    }
+  }
+}

@@ -5,11 +5,12 @@
   <div class="Categories">
     <h3 (click)="onBurgers()" [ngClass]="{ active: burgers }">Burgers</h3>
     <h3 (click)="onPizza()" [ngClass]="{ active: pizza }">Pizza</h3>
-    <h3>Special</h3>
-    <h3>Special</h3>
-    <h3>Special</h3>
+    <h3 (click)="onItalian()" [ngClass]="{ active: italian }">Italian</h3>
+    <h3 (click)="onSushi()" [ngClass]="{ active: sushi }">Sushi</h3>
   </div>
 
   <div *ngIf="burgers"><app-burgers></app-burgers></div>
   <div *ngIf="pizza"><app-pizza></app-pizza></div>
+  <div *ngIf="italian"><app-italian></app-italian></div>
+  <div *ngIf="sushi"><app-sushi></app-sushi></div>
 </div>
