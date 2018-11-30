@@ -1,7 +1,7 @@
 $color: #e74c3c;
 
 .Catering {
-  height: 60vh;
+  min-height: 60vh;
   background: url(https://images.pexels.com/photos/920570/pexels-photo-920570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
     no-repeat center center / cover;
   background-attachment: fixed;
@@ -39,6 +39,21 @@ $color: #e74c3c;
       // color: #fff;
       color: $color;
       // color: #ffc58e;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Catering {
+    form {
+      width: 90vw;
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+        width: 60%;
+      }
     }
   }
 }

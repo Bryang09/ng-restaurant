@@ -8,3 +8,24 @@
     margin: 0 1.5%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Icons {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Icons {
+    flex-direction: column;
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      text-align: center;
+    }
+  }
+}

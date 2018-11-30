@@ -45,3 +45,11 @@ $color: #e74c3c;
   background: $color;
   color: #fff;
 }
+
+@media screen and (max-width: 1192px) {
+  .Sub2 {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 991px) {
+}

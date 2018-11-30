@@ -16,6 +16,7 @@ $color: #f73939;
     font-size: 4.5em;
     color: #fff;
     font-weight: 400;
+    animation: hero 1s ease;
   }
 
   h3 {
@@ -27,11 +28,21 @@ $color: #f73939;
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 10vh;
+    animation: hero 1.5s ease;
   }
 
   img {
     height: 50px;
     animation: arrow 1s infinite 0s linear;
+  }
+
+  @keyframes hero {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   @keyframes arrow {
@@ -45,4 +56,27 @@ $color: #f73939;
 }
 
 @media screen and (max-width: 1192px) {
+  .Hero {
+    h2 {
+      font-size: 3.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero {
+    h2 {
+      font-size: 3.2em;
+    }
+
+    h3 {
+      font-size: 1.8em;
+    }
+  }
 }

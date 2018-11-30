@@ -19,8 +19,11 @@ $color: #f73939;
     align-items: center;
     cursor: pointer;
 
-    img {
-      height: 20%;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(https://images.unsplash.com/photo-1502364271109-0a9a75a2a9df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2997f5abf492da5dcbf1dec71f3989b&auto=format&fit=crop&w=1350&q=80)
+          no-repeat center center / cover;
+      transition: 0.5s ease;
     }
   }
 
@@ -46,6 +49,36 @@ $color: #f73939;
       margin: 0 0 1vh;
       color: $color;
       font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 1192px) {
+}
+
+@media screen and (max-width: 991px) {
+  .Sub1 {
+    width: 85vw;
+
+    .sub1Text {
+      width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Sub1 {
+    flex-direction: column-reverse;
+    min-height: 110vh;
+    width: 90vw;
+
+    .sub1Text {
+      width: 95%;
+    }
+
+    .img {
+      width: 95%;
+      margin-top: -2vh;
     }
   }
 }

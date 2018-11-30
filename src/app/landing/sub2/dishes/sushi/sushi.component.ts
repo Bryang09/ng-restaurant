@@ -29,7 +29,7 @@ export class SushiComponent implements OnInit {
       20
     ),
     new Dish(
-      "https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db2ae217ef1bab70c427affa0a7c12dc&auto=format&fit=crop&w=634&q=80",
+      "https://images.pexels.com/photos/858501/pexels-photo-858501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "Sushi Platter 1",
       12
     ),
