@@ -45,6 +45,9 @@ $color: #e74c3c;
 
 @media screen and (max-width: 500px) {
   .Catering {
+    h2 {
+      font-size: 2em;
+    }
     form {
       width: 90vw;
 
